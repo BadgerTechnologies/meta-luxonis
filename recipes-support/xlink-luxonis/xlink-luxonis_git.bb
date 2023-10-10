@@ -21,6 +21,7 @@ SRCREV="d209b7eeb8ac68435df5097e57e1dfd8ea1d0e83"
 SRC_URI = "\
     git://github.com/luxonis/XLink.git;protocol=https;branch=master \
     file://0001-Remove-Hunter.patch \
+    file://0001-yocto-Don-t-use-hardwired-paths-to-libusb-1.0.patch \
     "
 
 S = "${WORKDIR}/git"

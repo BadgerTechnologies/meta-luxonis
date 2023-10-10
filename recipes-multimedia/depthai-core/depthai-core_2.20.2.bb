@@ -15,7 +15,7 @@ DEPENDS += "\
     backward \
     bzip2 \
     fp16-luxonis \
-    libarchive-luxonis \
+    libarchive \
     libnop-luxonis \
     libusb1 \
     nlohmann-json \
@@ -40,6 +40,7 @@ DEPTHAI_ARTIFACTORY_URL = "https://artifacts.luxonis.com/artifactory"
 SRC_URI = "\
     gitsm://github.com/luxonis/depthai-core.git;protocol=https;nobranch=1;name=core \
     file://0001-Remove-Hunter.patch \
+    file://0001-Use-standard-libarchive-instead-of-the-custom-libarc.patch \
     \
     ${DEPTHAI_ARTIFACTORY_URL}/luxonis-myriad-release-local/depthai-bootloader/${DEPTHAI_BOOTLOADER_VERSION}/${DEPTHAI_FWP_BOOTLOADER_FILENAME};unpack=0;name=bootloader-fwp \
     ${DEPTHAI_ARTIFACTORY_URL}/luxonis-myriad-snapshot-local/depthai-device-side/${DEPTHAI_DEVICE_SIDE_COMMIT}/${DEPTHAI_FWP_DEVICE_SIDE_FILENAME};unpack=0;name=device-fwp \
